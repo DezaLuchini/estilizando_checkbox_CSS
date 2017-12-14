@@ -1,0 +1,138 @@
+.menuCheckbox {
+  font-family: sans-serif;
+  font-size: 20px;
+  border: none; /*tirar a borda em volta do fieldset*/
+}
+
+.menuCheckbox__checbox {
+  display: none; /*esconder o checkbox padrão*/
+}
+
+.menuCheckbox__checbox:checked + .menuCheckbox__label::after {
+  background-color: var(--medium); /*quando clicado, add background*/
+}
+
+.menuCheckbox__label {
+  margin-bottom: 10px; /*distância entre as label*/
+  padding-left: 35px; /*espaço que empurra a label para a direita para sair de cima dos quadrados*/
+  cursor: pointer; /*alterar estilo do cursor*/
+  display: block;
+  position: relative;
+}
+
+.menuCheckbox__label::before,
+.menuCheckbox__label::after {
+  content: "";
+  border: solid 1px var(--medium);
+  box-sizing: border-box;
+  display: inline-block; /*forma de palavra, mas que aceita definições de tamanho*/
+}
+
+/*quadrado maior*/
+.menuCheckbox__label::before {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  left: 0;
+  top: -1.5px;
+}
+
+/*quadrado menor*/
+.menuCheckbox__label::after {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 3px;
+  top: 1.5px;
+}
+
+.menuCheckbox__label--ux {
+  color: var(--ux); /*cor da label*/
+}
+
+.menuCheckbox__label--ux::before,
+.menuCheckbox__label--ux::after {
+  border-color: var(--ux); /*borda dos quadrados maior e menor*/
+}
+
+.menuCheckbox__checbox--ux:checked + .menuCheckbox__label--ux::after {
+  background-color: var(--ux); /*quando clicado, pintar da cor certa o quadrado menor*/
+}
+
+.menuCheckbox__label--design {
+  color: var(--design);
+}
+
+.menuCheckbox__label--design::before,
+.menuCheckbox__label--design::after {
+  border-color: var(--design);
+}
+
+.menuCheckbox__checbox--design:checked + .menuCheckbox__label--design::after {
+  background-color: var(--design);
+}
+
+.menuCheckbox__label--frontend {
+  color: var(--frontend);
+}
+
+.menuCheckbox__label--frontend::before,
+.menuCheckbox__label--frontend::after {
+  border-color: var(--frontend);
+}
+
+.menuCheckbox__checbox--frontend:checked + .menuCheckbox__label--frontend::after {
+  background-color: var(--frontend);
+}
+
+.menuCheckbox__label--backend {
+  color: var(--backend);
+}
+
+.menuCheckbox__label--backend::before,
+.menuCheckbox__label--backend::after {
+  border-color: var(--backend);
+}
+
+.menuCheckbox__checbox--backend:checked + .menuCheckbox__label--backend::after {
+  background-color: var(--backend);
+}
+
+.menuCheckbox__label--mobile {
+  color: var(--mobile);
+}
+
+.menuCheckbox__label--mobile::before,
+.menuCheckbox__label--mobile::after {
+  border-color: var(--mobile);
+}
+
+.menuCheckbox__checbox--mobile:checked + .menuCheckbox__label--mobile::after {
+  background-color: var(--mobile);
+}
+
+.menuCheckbox__label--devops {
+  color: var(--devops);
+}
+
+.menuCheckbox__label--devops::before,
+.menuCheckbox__label--devops::after {
+  border-color: var(--devops);
+}
+
+.menuCheckbox__checbox--devops:checked + .menuCheckbox__label--devops::after {
+  background-color: var(--devops);
+}
+
+.menuCheckbox__label--agile {
+  color: var(--agile);
+}
+
+.menuCheckbox__label--agile::before,
+.menuCheckbox__label--agile::after {
+  border-color: var(--agile);
+}
+
+.menuCheckbox__checbox--agile:checked + .menuCheckbox__label--agile::after {
+  background-color: var(--agile);
+}

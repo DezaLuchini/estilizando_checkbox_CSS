@@ -1,0 +1,72 @@
+.menuRadio {
+  font-family: sans-serif;
+  font-size: 20px;
+  border: none; /*tirar a borda em volta do fieldset*/
+}
+
+.menuRadio__radio {
+  display: none; /*esconder o design padrão*/
+}
+
+.menuRadio__radio:checked + .menuRadio__label::after {
+  background-color: var(--medium); /*quando clicado, add background*/
+}
+
+.menuRadio__label {
+  margin-bottom: 10px; /*distância entre as label*/
+  padding-left: 35px; /*espaço que empurra a label para a direita para sair de cima dos quadrados*/
+  cursor: pointer; /*alterar estilo do cursor*/
+  display: block;
+  position: relative;
+}
+
+.menuRadio__label::before,
+.menuRadio__label::after {
+  content: "";
+  border: solid 1px var(--medium);
+  border-radius: 50%; /*para deixar o quadrado arredondado, uma circunferencia*/
+  box-sizing: border-box;
+  display: inline-block; /*forma de palavra, mas que aceita definições de tamanho*/
+}
+
+.menuRadio__label::before {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  left: 0;
+  top: -1.5px;
+}
+
+.menuRadio__label::after {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 3px;
+  top: 1.5px;
+}
+
+.menuRadio__label--free {
+  color: var(--free);  /*cor da label*/
+}
+
+.menuRadio__label--free::before,
+.menuRadio__label--free::after {
+  border-color: var(--free); /*borda dos circulos maior e menor*/
+}
+
+.menuRadio__radio--free:checked + .menuRadio__label--free::after {
+  background-color: var(--free); /*quando clicado, pintar da cor certa o circulo menor*/
+}
+
+.menuRadio__label--payment {
+  color: var(--payment);
+}
+
+.menuRadio__label--payment::before,
+.menuRadio__label--payment::after {
+  border-color: var(--payment);
+}
+
+.menuRadio__radio--payment:checked + .menuRadio__label--payment::after {
+  background-color: var(--payment);
+}

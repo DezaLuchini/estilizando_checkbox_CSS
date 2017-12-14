@@ -5,34 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="icon" href="img/favicon-16x16.png">
-    <link rel="stylesheet" href="css/menuFilter.css">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/menuCheckbox.css">
+    <link rel="stylesheet" href="css/menuRadio.css">
 
-    <title>Estilizando o Checkbox</title>
+    <title>Estilizando Checkbox/Radio</title>
 
   </head>
   <body>
 
-    <fieldset class="menuFilter">
-      <legend class="menuFilter__title">Pode clicar em várias opções:</legend>
+    <fieldset class="menuCheckbox">
+      <legend class="menuCheckbox__title">
+        Checkbox - Possível selecionar mais de uma opção por vez:
+      </legend>
 
-      <input type="checkbox" name="ux" id="ux" class="menuFilter__checbox">
-      <label for="ux" class="menuFilter__label">
+      <input type="checkbox" name="ux" id="ux" class="menuCheckbox__checbox menuCheckbox__checbox--ux">
+      <label for="ux" class="menuCheckbox__label menuCheckbox__label--ux">
         UX
       </label>
 
-      <input type="checkbox" name="design" id="design" class="menuFilter__checbox">
-      <label for="design" class="menuFilter__label">
+      <input type="checkbox" name="design" id="design" class="menuCheckbox__checbox menuCheckbox__checbox--design">
+      <label for="design" class="menuCheckbox__label menuCheckbox__label--design">
         Design
       </label>
 
-      <input type="checkbox" name="frontend" id="frontend" class="menuFilter__checbox">
-      <label for="frontend" class="menuFilter__label">
+      <input type="checkbox" name="frontend" id="frontend" class="menuCheckbox__checbox menuCheckbox__checbox--frontend">
+      <label for="frontend" class="menuCheckbox__label menuCheckbox__label--frontend">
         Frontend
       </label>
 
-      <input type="checkbox" name="mobile" id="mobile" class="menuFilter__checbox">
-      <label for="mobile" class="menuFilter__label">
+      <input type="checkbox" name="backend" id="backend" class="menuCheckbox__checbox menuCheckbox__checbox--backend">
+      <label for="backend" class="menuCheckbox__label menuCheckbox__label--backend">
+        Backend
+      </label>
+
+      <input type="checkbox" name="mobile" id="mobile" class="menuCheckbox__checbox menuCheckbox__checbox--mobile">
+      <label for="mobile" class="menuCheckbox__label menuCheckbox__label--mobile">
         Mobile
+      </label>
+
+      <input type="checkbox" name="devops" id="devops" class="menuCheckbox__checbox menuCheckbox__checbox--devops">
+      <label for="devops" class="menuCheckbox__label menuCheckbox__label--devops">
+        DevOps
+      </label>
+
+      <input type="checkbox" name="agile" id="agile" class="menuCheckbox__checbox menuCheckbox__checbox--agile">
+      <label for="agile" class="menuCheckbox__label menuCheckbox__label--agile">
+        Agile
+      </label>
+    </fieldset>
+
+
+    <fieldset class="menuRadio">
+      <legend class="menuRadio__title">
+        Radio - Possível selecionar somente uma opção por vez:
+      </legend>
+
+      <input type="radio" name="titleIncricao" value="free" id="free" class="menuRadio__radio menuRadio__radio--free">
+      <label for="free" class="menuRadio__label menuRadio__label--free">
+        Free
+      </label>
+
+      <input type="radio" name="titleIncricao" value="payment" id="payment" class="menuRadio__radio menuRadio__radio--payment">
+      <label for="payment" class="menuRadio__label menuRadio__label--payment">
+        Pago
       </label>
     </fieldset>
 
