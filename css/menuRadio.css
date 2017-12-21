@@ -5,11 +5,17 @@
 }
 
 .menuRadio__radio {
-  display: none; /*esconder o design padrão*/
+  position: absolute;
+  opacity: 0;
+  /* display: none; esconder o design padrão*/
 }
 
 .menuRadio__radio:checked + .menuRadio__label::after {
   background-color: var(--medium); /*quando clicado, add background*/
+}
+
+.menuRadio__radio:focus + .menuRadio__label::after {
+  outline: 1px solid black;
 }
 
 .menuRadio__label {
