@@ -1,7 +1,8 @@
 .menuRadio {
   font-family: sans-serif;
   font-size: 20px;
-  border: none; /*tirar a borda em volta do fieldset*/
+  margin-bottom: 20px;
+  /*border: none; tirar a borda em volta do fieldset*/
 }
 
 .menuRadio__radio {
@@ -14,7 +15,8 @@
   background-color: var(--medium); /*quando clicado, add background*/
 }
 
-.menuRadio__radio:focus + .menuRadio__label::after {
+.menuRadio__radio:focus + .menuRadio__label::after,
+.menuRadio__radio:focus + .menuRadio__label::before {
   outline: 1px solid black;
 }
 
