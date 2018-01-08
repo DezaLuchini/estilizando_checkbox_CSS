@@ -1,8 +1,13 @@
-# estilizando_checkbox_CSS
-Estilizando o Checkbox somente com CSS
+# Estilizando Checkbox CSS
 
-Este repositório é auxiliar ao post referente ao assunto :)
+Estilizando o Checkbox com CSS  
 Post: http://andreza.eti.br/estilizando-o-checkbox-somente-com-css
 
+Acessibilidade no Checkbox estilizado  
+Post: *****
+
+Usando variáveis no CSS  
+Post: *****
+
 ## Author
-Andreza Luchini
+Andreza Luchini[http://andreza.eti.br/]

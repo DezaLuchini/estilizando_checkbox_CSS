@@ -2,28 +2,32 @@
   font-family: sans-serif;
   font-size: 20px;
   margin-bottom: 20px;
-  /*border: none; tirar a borda em volta do fieldset*/
+}
+
+.menuRadio__title {
+  margin: 5px;
 }
 
 .menuRadio__radio {
   position: absolute;
   opacity: 0;
-  /* display: none; esconder o design padrão*/
 }
 
 .menuRadio__radio:checked + .menuRadio__label::after {
-  background-color: var(--medium); /*quando clicado, add background*/
+  background-color: var(--medium);
 }
 
 .menuRadio__radio:focus + .menuRadio__label::after,
-.menuRadio__radio:focus + .menuRadio__label::before {
-  outline: 1px solid black;
+.menuRadio__radio:focus + .menuRadio__label::before,
+.menuRadio__radio:focus + .menuRadio__label {
+  border-width: 2px;
+  font-weight: 700;
 }
 
 .menuRadio__label {
-  margin-bottom: 10px; /*distância entre as label*/
-  padding-left: 35px; /*espaço que empurra a label para a direita para sair de cima dos quadrados*/
-  cursor: pointer; /*alterar estilo do cursor*/
+  margin: 10px 0 10px;
+  padding-left: 35px;
+  cursor: pointer;
   display: block;
   position: relative;
 }
@@ -32,11 +36,12 @@
 .menuRadio__label::after {
   content: "";
   border: solid 1px var(--medium);
-  border-radius: 50%; /*para deixar o quadrado arredondado, uma circunferencia*/
+  border-radius: 50%;
   box-sizing: border-box;
-  display: inline-block; /*forma de palavra, mas que aceita definições de tamanho*/
+  display: inline-block;
 }
 
+/*quadrado maior*/
 .menuRadio__label::before {
   position: absolute;
   width: 26px;
@@ -45,6 +50,7 @@
   top: -1.5px;
 }
 
+/*quadrado menor*/
 .menuRadio__label::after {
   position: absolute;
   width: 20px;
@@ -54,16 +60,16 @@
 }
 
 .menuRadio__label--free {
-  color: var(--free);  /*cor da label*/
+  color: var(--free);
 }
 
 .menuRadio__label--free::before,
 .menuRadio__label--free::after {
-  border-color: var(--free); /*borda dos circulos maior e menor*/
+  border-color: var(--free);
 }
 
 .menuRadio__radio--free:checked + .menuRadio__label--free::after {
-  background-color: var(--free); /*quando clicado, pintar da cor certa o circulo menor*/
+  background-color: var(--free);
 }
 
 .menuRadio__label--payment {

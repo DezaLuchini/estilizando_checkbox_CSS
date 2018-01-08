@@ -2,28 +2,36 @@
   font-family: sans-serif;
   font-size: 20px;
   margin-bottom: 20px;
-/*border: none; tirar a borda em volta do fieldset*/
+}
+
+.newCheckbox__title {
+  margin: 5px;
 }
 
 .newCheckbox__checbox {
   position: absolute;
   opacity: 0;
-  /*display: none; esconder o checkbox padrão */
 }
 
 .newCheckbox__checbox:checked + .newCheckbox__label::after {
-  background-color: var(--medium); /*quando clicado, add background*/
+  left: 13px;
+}
+
+.newCheckbox__checbox:checked + .newCheckbox__label::before {
+  background-color: var(--lightgreen);
 }
 
 .newCheckbox__checbox:focus + .newCheckbox__label::after,
-.newCheckbox__checbox:focus + .newCheckbox__label::before {
-  outline: 1px solid black;
+.newCheckbox__checbox:focus + .newCheckbox__label::before,
+.newCheckbox__checbox:focus + .newCheckbox__label {
+  border-width: 2px;
+  font-weight: 700;
 }
 
 .newCheckbox__label {
-  margin-bottom: 10px; /*distância entre as label*/
-  padding-left: 35px; /*espaço que empurra a label para a direita para sair de cima dos quadrados*/
-  cursor: pointer; /*alterar estilo do cursor*/
+  margin: 10px 0 10px;
+  padding-left: 35px;
+  cursor: pointer;
   display: block;
   position: relative;
 }
@@ -33,39 +41,57 @@
   content: "";
   border: solid 1px var(--medium);
   box-sizing: border-box;
-  display: inline-block; /*forma de palavra, mas que aceita definições de tamanho*/
+  display: inline-block;
 }
 
 /*quadrado maior*/
 .newCheckbox__label::before {
   position: absolute;
   width: 26px;
-  height: 26px;
+  height: 15px;
+  border-radius: 30px;
   left: 0;
-  top: -1.5px;
+  top: 2.5px;
 }
 
 /*quadrado menor*/
 .newCheckbox__label::after {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  left: 3px;
-  top: 1.5px;
-  /* background-color: white; */
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  left: 0;
+  top: 2.5px;
+}
+
+.newCheckbox__span {
+  font-size: 0.5rem;
+  position: relative;
+}
+
+.newCheckbox__span--off {
+  position: absolute;
+  top: -40px;
+  left: -4px;
+}
+
+.newCheckbox__span--on {
+  position: absolute;
+  top: -40px;
+  left: 20px;
 }
 
 .newCheckbox__label--opcao01 {
-  color: var(--opcao01); /*cor da label*/
+  color: var(--opcao01);
 }
 
 .newCheckbox__label--opcao01::before,
 .newCheckbox__label--opcao01::after {
-  border-color: var(--opcao01); /*borda dos quadrados maior e menor*/
+  border-color: var(--opcao01);
 }
 
-.newCheckbox__checbox--opcao01:checked + .newCheckbox__label--opcao01::after {
-  background-color: var(--opcao01); /*quando clicado, pintar da cor certa o quadrado menor*/
+.newCheckbox__label--opcao01::after {
+  background-color: var(--opcao01);
 }
 
 .newCheckbox__label--opcao02 {
@@ -77,6 +103,6 @@
   border-color: var(--opcao02);
 }
 
-.newCheckbox__checbox--opcao02:checked + .newCheckbox__label--opcao02::after {
+.newCheckbox__label--opcao02::after {
   background-color: var(--opcao02);
 }
