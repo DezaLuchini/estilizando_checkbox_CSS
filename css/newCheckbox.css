@@ -81,28 +81,41 @@
   left: 20px;
 }
 
-.newCheckbox__label--opcao01 {
-  color: var(--opcao01);
+.newCheckbox__label--html {
+  color: var(--html);
 }
 
-.newCheckbox__label--opcao01::before,
-.newCheckbox__label--opcao01::after {
-  border-color: var(--opcao01);
+.newCheckbox__label--html::before,
+.newCheckbox__label--html::after {
+  border-color: var(--html);
 }
 
-.newCheckbox__label--opcao01::after {
-  background-color: var(--opcao01);
+.newCheckbox__label--html::after {
+  background-color: var(--html);
 }
 
-.newCheckbox__label--opcao02 {
-  color: var(--opcao02);
+.newCheckbox__label--css {
+  color: var(--css);
 }
 
-.newCheckbox__label--opcao02::before,
-.newCheckbox__label--opcao02::after {
-  border-color: var(--opcao02);
+.newCheckbox__label--css::before,
+.newCheckbox__label--css::after {
+  border-color: var(--css);
 }
 
-.newCheckbox__label--opcao02::after {
-  background-color: var(--opcao02);
+.newCheckbox__label--css::after {
+  background-color: var(--css);
+}
+
+.newCheckbox__label--javascript {
+  color: var(--javascript);
+}
+
+.newCheckbox__label--javascript::before,
+.newCheckbox__label--javascript::after {
+  border-color: var(--javascript);
+}
+
+.newCheckbox__label--javascript::after {
+  background-color: var(--javascript);
 }
