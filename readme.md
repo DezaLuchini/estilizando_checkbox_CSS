@@ -2,9 +2,9 @@
 
 Posts relacionados ao tema :-)
 
-[Estilizando Checkbox com CSS](http://andreza.eti.br/estilizando_checkbox_css)
+[Como estilizar Checkbox com CSS](http://andreza.eti.br/estilizando_checkbox_css)
 
-[Implementando acessibilidade no Checkbox estilizado](http://andreza.eti.br/acessibilidade_checkbox_estilizado)
+[Aprenda a deixar o Checkbox estilizado acessível a pessoas com deficiência visual](http://andreza.eti.br/acessibilidade_checkbox_estilizado)
 
 [Usando variáveis no CSS](http://andreza.eti.br/variaveis_CSS)
 
